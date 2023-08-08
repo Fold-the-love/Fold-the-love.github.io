@@ -19,50 +19,16 @@ function randomNum(minNum,maxNum){
             break; 
     } 
 } 
-//纪念日
-
-if(m==9&&dd==18){
-    console.log("勿忘国耻，振兴中华！\n\n今天是1931年9月18日九一八事变"+(y-1931).toString()+"周年纪念日！\n=================================================================")
-    document.getElementsByTagName("html")[0].setAttribute("style","filter: grayscale(100%);");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("今天是1931年9月18日九一八事变"+(y-1931).toString()+"周年纪念日。\n勿忘国耻，振兴中华！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }    
-}
-if(m==7&&dd==7){
-    console.log("勿忘国耻，振兴中华！\n\n今天是1937年7月7日卢沟桥事变"+(y-1937).toString()+"周年纪念日！\n=================================================================")
-    document.getElementsByTagName("html")[0].setAttribute("style","filter: grayscale(100%);");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("今天是1937年7月7日卢沟桥事变"+(y-1937).toString()+"周年纪念日。\n勿忘国耻，振兴中华！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }    
-}
-if(m==12&&dd==13){
-    console.log("勿忘国耻，振兴中华！\n\n今天是1937年12月13日南京大屠杀"+(y-1931).toString()+"周年纪念日！为遇难的无辜同胞们缅怀！\n=================================================================")
-    document.getElementsByTagName("html")[0].setAttribute("style","filter: grayscale(100%);");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("今天是1937年12月13日南京大屠杀"+(y-1937).toString()+"周年纪念日，希望你能停下来缅怀遇难的无辜同胞们。\n勿忘国耻，振兴中华！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
-if(m==8&&dd==14){
-    console.log("勿忘国耻，振兴中华！\n\n今天是8月14日世界慰安妇纪念日！\n=================================================================")
-    document.getElementsByTagName("html")[0].setAttribute("style","filter: grayscale(100%);");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("今天是8月14日世界慰安妇纪念日，希望你能停下来了解一下来为历史作证，为曾经的无辜妇女发声。\n勿忘国耻，振兴中华！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
 
 //节假日
 
-if(m==10&&dd<=5){//国庆节
-    console.log("祖国"+(y-1949).toString()+"岁生日快乐！");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("祖国"+(y-1949).toString()+"岁生日快乐！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
+// if(m==10&&dd<=5){//国庆节
+//     console.log("祖国"+(y-1949).toString()+"岁生日快乐！");
+//     if(sessionStorage.getItem("isPopupWindow")!="1"){
+//         Swal.fire("祖国"+(y-1949).toString()+"岁生日快乐！");
+//         sessionStorage.setItem("isPopupWindow","1");
+//     }
+// }
 if(m==8&&dd==15){//搞来玩的，鬼子投降
     console.log("鬼子投降"+(y-1945).toString()+"年了！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
@@ -151,16 +117,6 @@ if((lunar["IMonthCn"]=="正月"&&lunar["IDayCn"]=="初六")||(lunar["IMonthCn"]=
         sessionStorage.setItem("isPopupWindow","1");
     }
 }
-
-if((lunar["IMonthCn"]=="六月"&&lunar["IDayCn"]=="廿二")){
-    //今天
-    console.log("今天快乐！");
-    if(sessionStorage.getItem("isPopupWindow")!="1"){
-        Swal.fire("今天快乐！");
-        sessionStorage.setItem("isPopupWindow","1");
-    }
-}
-
 if((lunar["IMonthCn"]=="正月"&&lunar["IDayCn"]=="十五")){
     //元宵节
     console.log("元宵节快乐！");
@@ -206,6 +162,49 @@ if((lunar["IMonthCn"]=="九月"&&lunar["IDayCn"]=="初九")){
     console.log("重阳节快乐！");
     if(sessionStorage.getItem("isPopupWindow")!="1"){
         Swal.fire("重阳节快乐！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////自定义节日////////////
+//农历
+if((lunar["IMonthCn"]=="四月"&&lunar["IDayCn"]=="二十")){
+    //站长生日
+    console.log("站长 已经 平安落地"+(y-2006).toString()+"周年了🎉！");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("站长 已经 平安落地"+(y-2006).toString()+"周年了🎉！");
+        sessionStorage.setItem("isPopupWindow","1");
+    }
+}
+//公历
+if(m==8&&dd==4){//Aspire Go's📡建站几周年
+    console.log("Aspire Go's📡建站"+(y-2023).toString()+"周年！");
+    if(sessionStorage.getItem("isPopupWindow")!="1"){
+        Swal.fire("Aspire Go's📡建站"+(y-2023).toString()+"周年！");
         sessionStorage.setItem("isPopupWindow","1");
     }
 }

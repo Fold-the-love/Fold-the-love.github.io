@@ -197,15 +197,14 @@
 
 
 
-/* 鼠标样式 */
-body {
-  cursor: url("https://cdn.jsdelivr.net/gh/xlenco/JS-X@main/mouse/normal.cur"), default;
-}
-a,
-img,
-button {
-  cursor: url("https://cdn.jsdelivr.net/gh/xlenco/JS-X@main/mouse/link.cur"), default !important;
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -521,3 +520,14 @@ h6::before {
   -webkit-animation: ccc 6s linear infinite;
   animation: ccc 6s linear infinite;
 }
+
+
+
+
+
+
+
+
+
+
+
