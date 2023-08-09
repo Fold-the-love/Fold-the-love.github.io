@@ -420,8 +420,8 @@ div#archive {
 }
 /* 子菜单栏居中 */
 /* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(5) .menus_item_child {
-  left: -33px;
+.menus_items .menus_item:nth-child(6) .menus_item_child {
+  left: -133px;
 }
 
 
@@ -563,7 +563,7 @@ h6::before {
 /* 播放器大小 */
 .music-player {
   width: 570px;
-  height: 1400px;
+  height: 500px;
 }
 .music-player h3{
   margin: 0px 0 1px!important;
