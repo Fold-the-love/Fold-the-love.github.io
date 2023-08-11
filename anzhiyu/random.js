@@ -1,0 +1,1 @@
+var posts=["2023/08/10/front_matter/","2023/08/09/Start/","2023/08/10/free_picture_bed/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
